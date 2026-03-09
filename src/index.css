@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --text-one-color: #2C2D35;
+  --text-two-color: #86928B;
+  --text-three-color: #598D66;
+  --text-four-color: #376B44;
+  --text-five-color: #FFFFFF;
+  --text-six-color: #F4F6F5;
+  --baground-one-color: #376B44;
+  --baground-two-color: #598D66;
+  --baground-three-color: #D4E8D9;
+  --baground-four-color: #E1EDE6;
+  --baground-five-color: #FFFFFF;
+}
+
+body {
+  padding: 60px 165px;
+}
+
+.section2__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section2__heading {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--text-one-color);
+}
+
+.section2__countries {
+  display: flex;
+  gap: 30px;
+}
+
+.section2__country-btn {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-two-color);
+  padding: 10px 20px;
+  border: 1px solid var(--text-two-color);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.section2__country-btn:hover {
+  background-color: var(--baground-two-color);
+  color: var(--text-six-color);
+  border-color: var(--text-three-color);
+}
+
+.section2__country-btn--active {
+  background-color: var(--text-three-color);
+  color: var(--text-six-color);
+  border-color: var(--text-three-color);
+}
+
+.section2__products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-art {
+  background-color: var(--baground-four-color);
+  max-width: 310px;
+  padding: 20px 20px 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-art:hover {
+  box-shadow: 0px 0px 5px 5px rgba(17, 46, 23, 0.2);
+}
+
+.card-art__image {
+  width: 100%;
+  height: auto;
+}
+
+.card-art__image-title {
+  color: var(--text-two-color);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.card-art__title {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.card-art__description {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.card-art__price {
+  margin-top: 30px;
+  color: var(--text-three-color);
+  font-size: 24px;
+}
+
+.card-art__btn {
+  width: 100%;
+  display: block;
+  height: 65px;
+  margin-top: 30px;
+  background-color: transparent;
+  color: var(--text-two-color);
+  border: 1px solid var(--baground-two-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-art__btn:hover {
+  background-color: var(--baground-two-color);
+  color: var(--text-six-color);
+}
+
+.card-art__btn:active {
+  background-color: var(--baground-one-color);
+  color: var(--text-five-color);
+}
