@@ -31,15 +31,17 @@ function App() {
       </div>
 
       <div className="section2__products">
-        {currentCards.map((card, i) => (
+        {currentCards.map((card) => (
           <CardArt
-            key={i}
+            key={card.id}
             src={card.src}
             author={card.author}
             title={card.title}
             description={card.description}
             price={card.price}
-          />
+          >
+            <button className="card-art__btn">В корзину</button>
+          </CardArt>
         ))}
       </div>
     </div>
